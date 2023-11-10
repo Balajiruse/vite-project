@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.top-bar
+{
+background-color: black;
+ grid-area: top;
+ color: white;
+  
+}
+.work-space
+{
+  display: grid;
+  
+  grid-template: 
+  "top top top top top" 10vh
+  " side main main main main" 90vh ;
+}
+.side-bar
+{
+grid-area: side;
+background-color: beige;
+}
+.main-bar
+{
+grid-area: main;
+background-color: brown;
+}
