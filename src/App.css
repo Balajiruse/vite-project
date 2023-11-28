@@ -1,31 +1,58 @@
-*{
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
 
-.top-bar
-{
-background-color: black;
- grid-area: top;
- color: white;
-  
-}
-.work-space
-{
+.app{
   display: grid;
-  
-  grid-template: 
-  "top top top top top" 10vh
-  " side main main main main" 90vh ;
+  grid-auto-flow: column;
+  gap:1rem;
+  padding: 0px;
 }
-.side-bar
-{
-grid-area: side;
-background-color: beige;
+.card{
+ display: grid;
+ grid-template-columns: auto;
+ gap: 1rem;
+ margin: 1rem;
+ padding: 1rem;
+  grid-template-columns:repeat(auto-fit, minmax(15rem, 1fr));   
+ background-color: white;   
+ width: 250px;
+ height: 440px;
+ border-radius: 10px;
+
 }
-.main-bar
-{
-grid-area: main;
-background-color: brown;
+#root{
+ display: grid;
+  background-color: rgb(14, 102, 243);
+  height: 35rem;
+  width:62rem;
+ margin-top: 1rem;
+  padding: 0px;
+  margin:auto;
+ 
+ 
+}
+.details{
+margin: 5px;
+}
+.sub{
+ font-size: small;
+ color: hsl(120, 2%, 60%);
+ text-align: center;
+ margin-top:5px;
+ margin-bottom:0px;
+ padding-bottom: 0px;
+}
+.title{
+ padding: 0px;
+ text-align: center;
+margin: 0px;
+font-size:xl-large;
+}
+.btn{
+ background-color: rgb(14, 178, 243);
+ border-radius: 20px;
+ color: white;
+ padding: 10px;
+ padding-left:10px;
+ padding-right: 20px;
+ font-weight: bold;
+ text-align: center;
 }
